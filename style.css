@@ -1,0 +1,212 @@
+html {
+  box-sizing: border-box;
+  height: 100vh;
+  
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  background: #0D568C;
+  font-family:  Poppins, Arial, Helvetica, sans-serif;
+  color: #f7f7f7;
+  
+}
+
+
+#main {
+  display: grid;
+  grid-template-columns: 1fr 1fr ;
+  grid-template-rows: 98vh auto auto;
+  row-gap: 10px;
+  column-gap: 10px;
+}
+
+
+.section {
+  border: 2px solid goldenrod;
+}
+
+
+.figure {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #141518;
+  padding: 1.5rem;
+}
+
+
+
+figcaption {
+  text-align: center;
+}
+
+#image, #image2, #image3 {
+  width: 25rem;
+  max-width: 100%;
+}
+
+img:hover {
+    opacity: 0.9;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* background-color: rgba(255, 255, 255, 0.7); */
+  /* background-image: url("/images/image-3-guitar.jpg"); */
+  background: #E0E0E0 ;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #141518;
+}
+
+
+#title {
+  margin: 0;
+}
+
+#title {
+  font-size: 4rem;
+  font-family: "Special Elite", Poppins, Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+.image2 {
+grid-column: 2/3;
+grid-row: 2/3;
+background: #141518;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+.info {
+  grid-column: 1/2;
+  grid-row: 2/3;
+  padding: 10px;
+  background: #E0E0E0;
+  color: #141518;
+
+}
+
+#tribute-info {
+  font-family: "Special Elite", Poppins, Arial, Helvetica, sans-serif;
+  margin: 0;
+  text-align: center;
+  margin-top: 0.5rem;
+}
+
+span {
+  font-weight: bold;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  align-items: space-between;
+  padding: 1rem;
+  margin: 0;
+  
+}
+
+li {
+  list-style: none;
+  margin-bottom: 0.4rem;
+}
+
+
+.image3 {
+  grid-column: 1/2;
+  grid-row: 3/4;
+  background: #141518;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+
+}
+
+.link {
+  grid-column: 2/3;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #E0E0E0;
+  color: #141518;
+  padding: 1rem;
+}
+
+
+.image2 {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  background: #141518;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  }
+
+  a {
+    text-decoration: none;
+  }
+/*  Small devices (landscape phones, 576px and up) */
+@media (max-width: 600px) {
+
+ 
+  #main {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 15% auto auto auto 20% auto;
+    row-gap: 10px;
+    column-gap: 10px;
+  }
+
+  .title {
+    grid-column: 1;
+      grid-row: 1/2;
+  }
+
+  .figure {
+    grid-column: 1;
+    grid-row: 2/3;
+  }
+
+  .info {
+    grid-column: 1;
+    grid-row: 3/4;
+  }
+
+  .image2 {
+    grid-column: 1;
+    grid-row: 4/5;
+  }
+
+  .link {
+    grid-column: 1;
+    grid-row: 5/6; 
+  }
+
+
+  .image3 {
+    grid-column: 1;
+    grid-row: 6/7;
+  }
+
+  #title {
+    font-size: 4rem;
+    text-align: center;
+  }
+
+ }
